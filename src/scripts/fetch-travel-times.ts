@@ -7,7 +7,11 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 // Digitransit API configuration
 const API_URL = 'https://api.digitransit.fi/routing/v2/hsl/gtfs/v1';
-const API_KEY = 'd686cc56e0fb4f33adadefa22e09e47d';
+const API_KEY = process.env.DIGITRANSIT_API_KEY;
+if (!API_KEY) {
+  console.error('Missing DIGITRANSIT_API_KEY. Set it in .env or when running: DIGITRANSIT_API_KEY=xxx npm run fetch-data');
+  process.exit(1);
+}
 
 // Helsinki Railway Station - city center destination
 const CITY_CENTER = {
