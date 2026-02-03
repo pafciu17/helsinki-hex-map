@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Hexagon (hex map) in Helsinki blue -->
+  <path d="M16 2l12 7v14l-12 7-12-7V9L16 2z" fill="#003479" stroke="#001a3d" stroke-width="0.8"/>
+  <!-- Minimal landmark: dome + base (cathedral silhouette) -->
+  <path d="M16 7c-2 0-3.5 1.5-3.5 3.5 0 1.2.6 2.2 1.5 2.8v8.4h4v-8.4c.9-.6 1.5-1.6 1.5-2.8C19.5 8.5 18 7 16 7z" fill="white"/>
+  <circle cx="16" cy="10" r="1.2" fill="#003479"/>
+</svg>
